@@ -1,26 +1,38 @@
+Filename: src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './components/Auth/Login';
-import Signup from './components/Auth/Signup';
-import Overview from './components/Dashboard/Overview';
-import Transactions from './components/Dashboard/Transactions';
-import Analytics from './components/Dashboard/Analytics';
-import Profile from './components/Settings/Profile';
-import AccountSettings from './components/Settings/AccountSettings';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+import Dashboard from './pages/Dashboard';
+import Transactions from './pages/Transactions';
+import Analytics from './pages/Analytics';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/dashboard/overview" component={Overview} />
-        <Route path="/dashboard/transactions" component={Transactions} />
-        <Route path="/dashboard/analytics" component={Analytics} />
-        <Route path="/settings/profile" component={Profile} />
-        <Route path="/settings/account" component={AccountSettings} />
-        <Route path="/" exact component={Overview} />
-      </Switch>
+      <div className="App">
+        <Navbar />
+        <Sidebar />
+        <div className="main-content">
+          <Switch>
+            <Route path="/" exact component={Dashboard} />
+            <Route path="/transactions" component={Transactions} />
+            <Route path="/analytics" component={Analytics} />
+            <Route path="/profile" component={Profile} />
+            <Route path="/settings" component={Settings} />
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={SignUp} />
+          </Switch>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }
