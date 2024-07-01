@@ -1,0 +1,52 @@
+Filename: src/App.css
+
+.App {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.navbar, .sidebar, .footer {
+  background-color: #1c92d2;
+  color: white;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content h2 {
+  color: #1c92d2;
+}
+
+.footer {
+  text-align: center;
+}
+
+.button {
+  background-color: #1c92d2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
