@@ -3,25 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Fronty</title>
+    <title>Finance Dashboard</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <div class="hero-section">
-        <div class="hero-text">
-            <h1 class="hero-title">All your business<br>expenses in one place.</h1>
-            <p class="hero-subtitle">Your one-stop finance empower platform.<br>Manage all your business expenses with our supafast app.</p>
-            <div class="hero-buttons">
-                <div class="hero-button demo-button">Get a Free Demo</div>
-                <div class="hero-button pricing-button">See Pricing</div>
-            </div>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Finance Dashboard Logo">
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2380 1986">
-            <circle cx="1897" cy="457" r="457" fill="none" stroke="white" stroke-width="100" opacity="0.05"/>
-            <circle cx="457" cy="1529" r="457" fill="none" stroke="white" stroke-width="100" opacity="0.05"/>
-            <circle cx="456" cy="457" r="443.5" fill="white" stroke="white" stroke-width="1" opacity="0.05" filter="blur(200px)" />
-            <circle cx="1897" cy="1514" r="483.5" fill="white" stroke="white" stroke-width="1" opacity="0.05" filter="blur(200px)" />
-        </svg>
-    </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="overview">
+            <div class="card">
+                <h2>Total Balance</h2>
+                <p>$120,000</p>
+            </div>
+            <div class="card">
+                <h2>Income</h2>
+                <p>$25,000</p>
+            </div>
+            <div class="card">
+                <h2>Expenses</h2>
+                <p>$5,000</p>
+            </div>
+        </section>
+        <section class="actions">
+            <button class="btn-primary">Add Transaction</button>
+            <button class="btn-secondary">Generate Report</button>
+        </section>
+        <section class="details">
+            <h2>Recent Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/07/2024</td>
+                        <td>Freelance Payment</td>
+                        <td>$1,200</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>30/06/2024</td>
+                        <td>Office Supplies</td>
+                        <td>-$200</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Finance Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
