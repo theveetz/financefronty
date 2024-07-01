@@ -2,7 +2,7 @@
   "name": "finance-dashboard",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://theveetz.github.io/financefronty/",
+  "homepage": "https://theveetz.github.io/financefronty",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
