@@ -1,11 +1,9 @@
-Filename: src/pages/Dashboard.js
-
 import React from 'react';
 
 const Dashboard = () => {
   return (
     <div>
-      <h2>Dashboard</h2>
+      <h1>Dashboard</h1>
     </div>
   );
 };
